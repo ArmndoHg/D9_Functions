@@ -60,12 +60,27 @@ console.log(boundary(120))
 
 console.log("\n----------EXERCISE 5-----------");
 
+function Srivify(Str){
+    return Str === 'Strive' ? Str: 'Strive '+ Str;
+}
+console.log(Srivify('Strive'))
+
 /* EXERCISE 6
  Write a function called "check3and7" which accepts a positive number as a parameter and checks if it is a multiple of 3 or a multiple of 7.
  HINT: Modulus Operator
 */
 
+
 console.log("\n----------EXERCISE 6-----------");
+
+function check3and7(nudi) {
+  if (nudi % 3 == 0 || nudi % 7 == 0) {
+    return nudi + " is a multiple of 3 or 7";
+  } else {
+    return "It's not a multiple of 3 or 7";
+  }
+}
+console.log(check3and7(15));
 
 /* EXERCISE 7
  Write a function called "reverseString" which programmatically reverses a given string (es.: Strive => evirtS).
@@ -79,6 +94,11 @@ console.log("\n----------EXERCISE 7-----------");
 
 console.log("\n----------EXERCISE 8-----------");
 
+function upperFirst(string) {
+    return string.charAt(0).toUpperCase() + string.slice(1);
+}
+console.log(upperFirst("capitalize"));
+
 /* EXERCISE 9
  Write a function called "cutString" which creates a new string without the first and last character of a given string passed as a parameter.
 */
@@ -90,6 +110,16 @@ console.log("\n----------EXERCISE 9-----------");
 */
 
 console.log("\n----------EXERCISE 10-----------");
+
+function giveMeRandom(Rnber) {
+  let arr = [];
+  for (i = 0; i < Rnber; i++) {
+    arr.push(Math.floor(Math.random() * 10));
+  }
+  return arr;
+}
+
+console.log(giveMeRandom(7));
 
 /* WHEN YOU ARE FINISHED
  Commit and push the code to your personal GitHub repository; then post the link of your commit on the Homework section of today's Eduflow.
